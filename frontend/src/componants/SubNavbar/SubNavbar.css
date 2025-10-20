@@ -1,0 +1,21 @@
+.SubNavbar {
+    grid-area: subnavbar;
+    border-bottom: 1px solid var(--color-text-light);
+    display: flex;
+    align-items: center;
+}
+
+.SubNavbar__link {
+    margin: 0 20px;
+    color: var(--text-color-light);
+    text-decoration: none;
+    transition: 0.3s;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.SubNavbar__link:hover {
+    background: var(--color-purple-primary)
+}

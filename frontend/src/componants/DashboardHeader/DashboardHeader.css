@@ -1,0 +1,28 @@
+.DashboardHeader {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.DashboardHeader__title {
+    font-size: 40px;
+    font-weight: 200;
+    color: var(--color-text-light);
+}
+
+.DashboardHeader__btn {
+    padding: 0.6rem 1.5rem;
+    background: var(--color-button-bg);
+    color: var(--color-text-light);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+.DashboardHeader__btn:hover {
+    background: var(--color-button-hover-bg);
+}

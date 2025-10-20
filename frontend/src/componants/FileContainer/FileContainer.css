@@ -1,0 +1,5 @@
+.FileContainer {
+    grid-area: container;
+    border: 1px solid var(--color-text-light);
+    border-top: none;
+}
