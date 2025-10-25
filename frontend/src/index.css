@@ -10,11 +10,15 @@
 
 :root {
     --color-dark-bg: #1A1A1A;
+    --color-dark-bg-1: #1e1e1e;
+    --color-dark-bg-2: #232323;
+
     --color-purple-primary: #593a8a;
     --color-text-light: #E0E0E0;
     --color-text-subtle: #A0A0A0;
     --color-input-border: #3A3A3A;
     --color-button-bg: #7C4DFF; 
     --color-button-hover-bg: #6A3CDA;
-    --color-shadow: rgba(0, 0, 0, 0.5);
+    --color-shadow: #0000001a;
+    --color-border: #2a2a2a;
 }

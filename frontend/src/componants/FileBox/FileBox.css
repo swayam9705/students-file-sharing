@@ -1,0 +1,25 @@
+.FileBox {
+    width: 90%;
+    background: var(--color-purple-primary);
+    margin: 20px auto;
+    height: 100px;
+    border-radius: 7px;
+    /* border: 1px solid var(--color-border); */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #3e3e3e;
+    /* box-shadow: 0 5px 5px #2a2a2a70; */
+}
+
+.FileBox__top {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.FileBox__bottom {
+    display: flex;
+    margin-top: auto;
+    justify-content: space-between;
+}

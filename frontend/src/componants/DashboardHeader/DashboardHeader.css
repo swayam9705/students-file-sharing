@@ -12,7 +12,7 @@
 }
 
 .DashboardHeader__btn {
-    padding: 0.6rem 1.5rem;
+    padding: 0.5rem 1rem;
     background: var(--color-button-bg);
     color: var(--color-text-light);
     border: none;
@@ -25,4 +25,11 @@
 
 .DashboardHeader__btn:hover {
     background: var(--color-button-hover-bg);
+}
+
+
+@media (max-width: 900px) {
+    .DashboardHeader {
+        font-size: 1rem;
+    }
 }
