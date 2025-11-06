@@ -1,0 +1,92 @@
+.Navbar {
+    background-color: #000000;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--accent-primary);
+}
+
+.Navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Navbar-logo {
+    color: var(--text-bright);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.Navbar-logout {
+    background-color: var(--accent-bright);
+    color: var(--text-dark, #1a1a1a);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.Navbar-logout:hover {
+    background-color: var(--accent-light);
+    box-shadow: 0 2px 8px var(--shadow-green);
+}
+
+.Navbar-logout:active {
+    background-color: var(--accent-dark);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+    .Navbar {
+        padding: 0.75rem 1rem;
+    }
+    
+    .Navbar-container {
+        padding: 0 0.5rem;
+    }
+    
+    .Navbar-logo {
+        font-size: 1.25rem;
+    }
+    
+    .Navbar-logout {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Navbar {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .Navbar-logo {
+        font-size: 1.1rem;
+    }
+    
+    .Navbar-logout {
+        padding: 0.35rem 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Navbar {
+        padding: 0.4rem 0.5rem;
+    }
+    
+    .Navbar-logo {
+        font-size: 1rem;
+    }
+    
+    .Navbar-logout {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.8rem;
+    }
+}
