@@ -1,6 +1,6 @@
 .Navbar {
     background-color: #000000;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -21,6 +21,10 @@
     font-weight: 700;
 }
 
+.Navbar-logo img {
+    height: 4rem;
+}
+
 .Navbar-logout {
     background-color: var(--accent-bright);
     color: var(--text-dark, #1a1a1a);
@@ -29,17 +33,15 @@
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .Navbar-logout:hover {
     background-color: var(--accent-light);
-    box-shadow: 0 2px 8px var(--shadow-green);
 }
 
 .Navbar-logout:active {
     background-color: var(--accent-dark);
-    box-shadow: none;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,13 +1,26 @@
-import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
-import SubNavbar from '../components/SubNavbar/SubNavbar'
-import Dashboard from '../components/Dashboard/Dashboard'
+import React, { useEffect } from 'react'
+import Navbar from '../../components/Navbar/Navbar'
+import SubNavbar from '../../components/SubNavbar/SubNavbar'
+import Dashboard from '../../components/Dashboard/Dashboard'
+import { useNavigate } from 'react-router'
+import useUserContext from '../../contexts/UserContext'
+import { auth } from '../../config/firebase.config'
+
+
 
 const Home = () => {
+
+    const navigate = useNavigate()
+    const { userContextDetails, setUserContextDetails } = useUserContext()
+
+    useEffect(() => {
+        if (userContextDetails == null) {
+            navigate("/auth")
+        }
+    }, [userContextDetails])
+
     return (
         <div className="Home">
-            <Navbar />
-            
             {/* subjects bar */}
             <SubNavbar
                 links={[

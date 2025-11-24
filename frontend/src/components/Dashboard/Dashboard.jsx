@@ -6,7 +6,7 @@ import "./Dashboard.css"
 
 const Dashboard = () => {
     return (
-        <div className="Dashboard">
+        <main className="Dashboard">
             <FileCard
                 title="Module 1: Introduction" 
                 link="#"
@@ -23,7 +23,7 @@ const Dashboard = () => {
                 title="Module 1: Introduction" 
                 link="#"
             />
-        </div>
+        </main>
     )
 }
 
