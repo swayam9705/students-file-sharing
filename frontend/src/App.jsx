@@ -1,13 +1,16 @@
-import { useEffect } from "react"
 import { Route, Routes, useLocation } from "react-router"
 
 import Navbar from "./components/Navbar/Navbar"
 
-import useUserContext, { UserContextProvider } from "./contexts/UserContext"
+import { UserContextProvider } from "./contexts/UserContext"
 
 import "./App.css"
+
+// pages
 import Home from "./pages/Home/Home"
 import Auth from "./pages/Auth/Auth"
+import Upload from "./pages/Upload/Upload"
+import { useEffect } from "react"
 
 function App() {
 	const location = useLocation()
@@ -20,6 +23,8 @@ function App() {
 			<Routes>
 				<Route path="/" Component={Home} />
 				<Route path="/auth" Component={Auth} />
+				<Route path="/upload" Component={Upload} />
+
 			</Routes>
 		</div>
 

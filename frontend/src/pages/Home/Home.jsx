@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react'
-import Navbar from '../../components/Navbar/Navbar'
 import SubNavbar from '../../components/SubNavbar/SubNavbar'
 import Dashboard from '../../components/Dashboard/Dashboard'
-import { useNavigate } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import useUserContext from '../../contexts/UserContext'
-import { auth } from '../../config/firebase.config'
+import { FaPlus } from "react-icons/fa"
 
-
+import "./Home.css"
 
 const Home = () => {
 
@@ -42,7 +41,9 @@ const Home = () => {
                     {title: "Assignments", link: "#"},
                 ]}
             />
-
+            <div className="Home-link-container">
+                <Link to="/upload">Upload File <FaPlus /></Link>
+            </div>
             <Dashboard />
         </div>
     )

@@ -11,6 +11,8 @@ const Navbar = () => {
 
     const { userContextDetails, setUserContextDetails } = useUserContext()
 
+    const navigate = useNavigate()
+
     const handleLogout = async () => {
         if (userContextDetails != null) {
             try {
@@ -31,17 +33,24 @@ const Navbar = () => {
     return (
         <nav className="Navbar">
             <div className="Navbar-container">
+            <div className="Navbar-left">
                 <div className="Navbar-logo">
                     <img src={Logo} />
                 </div>
+            </div>
+            <div className="Navbar-right">
+                <span className="Navbar-usrname">
+                    { userContextDetails && `${userContextDetails.email}` }
+                </span>
                 <button
                     onClick={handleLogout}
                     className="Navbar-logout"
                 >
                     {
-                        userContextDetails ? `${userContextDetails.email} Logout` : "Login"
+                        userContextDetails ?  "Logout" : "Login"
                     }
                 </button>
+            </div>
             </div>
         </nav>
     )

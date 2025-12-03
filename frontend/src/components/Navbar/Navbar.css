@@ -25,6 +25,13 @@
     height: 4rem;
 }
 
+.Navbar-usrname {
+    color: var(--text-primary);
+    margin-right: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
 .Navbar-logout {
     background-color: var(--accent-bright);
     color: var(--text-dark, #1a1a1a);

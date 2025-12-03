@@ -1,0 +1,21 @@
+.Home-link-container {
+    width: 100%;
+    max-width: 950px;
+    margin: 10px auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.Home-link-container a {
+    padding: 0.5rem 1.5rem;
+    background: var(--accent-bright);
+    color: var(--bg-primary);
+    text-decoration: none;
+    display: flex;
+    transition: 0.3s;
+}
+
+.Home-link-container a:hover {
+    background: var(--accent-light);
+}
